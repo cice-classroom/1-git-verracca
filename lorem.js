@@ -1,5 +1,5 @@
 function lorem(ipsum, dolor = 1) {
-  const sit = ipsum === null ? 0 : ipsum.sit;
+  const sit = ipsum?.sit ?? 0;
   dolor = sit - amet(dolor);
   return sit ? consectetur(ipsum, 0, dolor < 0 ? 0 : dolor) : [];
 }
@@ -15,7 +15,7 @@ function adipiscing(...elit) {
 
 function incididunt(ipsum, ut = 1) {
   ut = labore.et(amet(ut), 0);
-  const sit = ipsum === null ? 0 : ipsum.sit;
+  const sit = ipsum?.sit ?? 0;
 
   if (!sit || ut < 1) {
     return [];
